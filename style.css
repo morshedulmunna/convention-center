@@ -1,15 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
 
-/* font-family: 'Bebas Neue', cursive;
-font-family: 'Roboto', sans-serif; */
 * {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
-}
-h1,
-span {
-  font-family: "Bebas Neue", cursive;
+  font-family: "Poppins", sans-serif;
 }
 
 :root {
@@ -18,7 +12,9 @@ span {
   --third-color: #ffa1c9;
   --text-color: #000;
 }
-
+.section-padding {
+  margin-top: 5rem;
+}
 /* Logo CSS */
 ._logo {
   font-weight: 700;
@@ -29,10 +25,6 @@ span {
   width: 40px;
 }
 /* Navbar Customize CSS */
-._navbar {
-  position: fixed;
-  z-index: 999;
-}
 ._navbar-nav li {
   margin-left: 2rem !important;
 }
@@ -54,4 +46,44 @@ span {
   margin: 1rem;
 }
 
+/* Our Pakege Card CSS =======>> */
+#card_li {
+  list-style: none;
+  padding: 0 !important;
+}
+#card_li li::before {
+  content: "✓ ";
+}
+._card h1,
+h3 {
+  color: #e60965;
+}
+._card a {
+  text-decoration: none;
+  font-weight: 700;
+  padding: 0.5rem 0.8rem;
+  border-radius: 10px;
+}
+#special_card {
+  background-color: lightgray;
+  padding: 1rem;
+  border-radius: 10px;
+}
+#special_card a {
+  background-color: var(--primary-color);
+  color: #fff;
+}
 /* Slider */
+@media screen and (max-width: 767px) {
+  .slider_text h1 {
+    font-size: 1.2rem;
+  }
+  .slider_text p {
+    font-size: 10px;
+    width: 50%;
+    margin-left: 8rem;
+  }
+  .slider_text a {
+    font-size: 10px;
+  }
+}
