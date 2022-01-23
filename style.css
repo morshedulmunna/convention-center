@@ -12,6 +12,9 @@
   --third-color: #ffa1c9;
   --text-color: #000;
 }
+.text-color {
+  color: var(--text-color) !important;
+}
 .section-padding {
   margin-top: 5rem;
 }
