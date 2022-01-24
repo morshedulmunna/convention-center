@@ -89,17 +89,45 @@ h3 {
   right: 20px;
   border-radius: 10px;
 }
-/* Slider */
-/* @media screen and (max-width: 767px) {
+.slider_text {
+  position: absolute;
+  top: 40%;
+}
+.slider_text p {
+  width: 40%;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+.slider_text h1 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+/* Slider Top Text */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .slider_text {
+    position: absolute;
+    top: 10%;
+  }
   .slider_text h1 {
-    font-size: 1.2rem;
+    font-size: 3rem;
+  }
+}
+/* Slider */
+@media screen and (max-width: 767px) {
+  .slider_text {
+    position: absolute;
+    top: 10%;
+  }
+  .slider_text h1 {
+    font-size: 1.5rem;
+    margin: 5px;
   }
   .slider_text p {
     font-size: 10px;
     width: 50%;
-    margin-left: 8rem;
+    margin: auto;
   }
   .slider_text a {
     font-size: 10px;
   }
-} */
+}
