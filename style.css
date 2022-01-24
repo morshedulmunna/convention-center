@@ -11,6 +11,7 @@
   --secondary-color: #106ee1;
   --third-color: #3e81ff;
   --text-color: #000;
+  --white-color: #fff;
 }
 .text-color {
   color: var(--text-color) !important;
@@ -70,10 +71,14 @@ h3 {
   color: var(--third-color);
 }
 #special_card {
-  background-color: rgb(211, 211, 211);
+  background-color: var(--third-color);
   padding: 2rem;
   border-radius: 10px;
   position: relative;
+}
+#special_card a {
+  background-color: var(--white-color);
+  color: var(--third-color);
 }
 #hot {
   padding: 0.5rem 1rem;
@@ -83,10 +88,6 @@ h3 {
   top: -15px;
   right: 20px;
   border-radius: 10px;
-}
-#special_card a {
-  background-color: var(--secondary-color);
-  color: #fff;
 }
 /* Slider */
 @media screen and (max-width: 767px) {
