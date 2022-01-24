@@ -7,9 +7,9 @@
 }
 
 :root {
-  --primary-color: #e60965;
-  --secondary-color: #f94892;
-  --third-color: #ffa1c9;
+  --primary-color: #2d46b9;
+  --secondary-color: #106ee1;
+  --third-color: #3e81ff;
   --text-color: #000;
 }
 .text-color {
@@ -50,6 +50,7 @@
 }
 
 /* Our Pakege Card CSS =======>> */
+
 #card_li {
   list-style: none;
   padding: 0 !important;
@@ -59,21 +60,32 @@
 }
 ._card h1,
 h3 {
-  color: #e60965;
+  color: var(--secondary-color);
 }
 ._card a {
   text-decoration: none;
   font-weight: 700;
   padding: 0.5rem 0.8rem;
   border-radius: 10px;
+  color: var(--third-color);
 }
 #special_card {
-  background-color: lightgray;
-  padding: 1rem;
+  background-color: rgb(211, 211, 211);
+  padding: 2rem;
+  border-radius: 10px;
+  position: relative;
+}
+#hot {
+  padding: 0.5rem 1rem;
+  color: #fff;
+  background-color: #ff4e4e;
+  position: absolute;
+  top: -15px;
+  right: 20px;
   border-radius: 10px;
 }
 #special_card a {
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   color: #fff;
 }
 /* Slider */
